@@ -1,0 +1,3 @@
+# Ignore test and .git directories
+tests/
+.git/

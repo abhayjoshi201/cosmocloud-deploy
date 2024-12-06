@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  REDIS_URI: {{ .Values.backend.env.REDIS_URI | quote }}
+  BACKEND_URL: {{ .Values.frontend.env.BACKEND_URL | quote }}
